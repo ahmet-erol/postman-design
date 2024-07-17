@@ -1,0 +1,240 @@
+.main-div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #262626;
+    align-items: center;
+    border-bottom: 1px solid #404040;
+
+    /* border-bottom-color: #404040; */
+
+}
+
+.left-area {
+    display: flex;
+    flex: 1;
+    background-color: #262626;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+
+}
+
+.logo-options {
+    padding: 15px;
+    display: flex;
+    background-color: #262626;
+    color: #A7A1A1;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logo-options:hover {
+    color: white;
+}
+
+.arrow {
+    display: flex;
+    gap: 20px;
+
+}
+
+.arrow:hover {
+    color: white;
+}
+
+.left-arrow {
+    background-color: #262626;
+    color: #A7A1A1;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-arrow:hover {
+    color: white;
+}
+
+.right-arrow {
+    background-color: #262626;
+    color: #A7A1A1;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-arrow:hover {
+    color: white;
+}
+
+.header-texts {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    margin-left: 13px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+}
+
+.home-text {
+    color: #A7A1A1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.home-text:hover {
+    color: white;
+}
+
+.workspaces-text {
+    color: #A7A1A1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.workspaces-text:hover {
+    color: white;
+}
+
+
+.apinetwork-test {
+    color: #A7A1A1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.apinetwork-test:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center-area {
+    display: flex;
+    flex: 1;
+    background-color: #262626;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-box {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #404040;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+
+
+
+
+
+
+.right-area {
+    display: flex;
+    flex: 1;
+    background-color: #262626;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 30px;
+
+}
+
+.invite-button {
+    display: flex;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    background-color: #3B3B3B;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-size: 12px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.invite-button:hover {
+    background-color: #6B6B6B;
+}
+
+.invite-logo {
+    margin-right: 5px;
+    color: white;
+    font-size: 13px;
+
+
+}
+
+.options-logo {
+    background-color: #262626;
+    color: #A7A1A1;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    ;
+}
+
+.options-logo:hover {
+    color: white;
+}
+
+
+.noti-logo {
+    /* background-color: #262626; */
+    color: #A7A1A1;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    ;
+}
+
+.noti-logo:hover {
+    color: white;
+}
+
+.upgrade-button {
+    background-color: #3B3B3B;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: "JetBrains Mono", monospace;
+
+}
+
+.upgrade-button:hover {
+    background-color: #6B6B6B;
+}

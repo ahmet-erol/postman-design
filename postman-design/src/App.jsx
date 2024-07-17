@@ -13,7 +13,7 @@ function App() {
       <Leftworkplace />
       <Rightworkplace />
 
-      ahmet
+
 
     </div>
   )
