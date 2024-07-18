@@ -4,10 +4,14 @@
     background-color: #262626;
     align-items: center;
     border-bottom: 1px solid #404040;
-
-    /* border-bottom-color: #404040; */
-
 }
+
+.collection {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
 
 .left-area {
     display: flex;

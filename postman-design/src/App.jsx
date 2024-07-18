@@ -8,13 +8,14 @@ function App() {
 
 
   return (
-    <div>
-      <Header />
-      <Leftworkplace />
-      <Rightworkplace />
-
-
-
+    <div className='apptest'>
+      <div className='headertest'>
+        <Header />
+      </div>
+      <div className='contenttest'>
+        <div><Leftworkplace /></div>
+        <div><Rightworkplace /></div>
+      </div>
     </div>
   )
 }

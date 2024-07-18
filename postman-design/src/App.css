@@ -11,3 +11,8 @@ body {
         font-style: normal;
     }
 }
+
+.contenttest {
+    display: flex;
+    align-items: center;
+}

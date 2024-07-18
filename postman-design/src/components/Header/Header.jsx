@@ -18,24 +18,26 @@ function Header() {
                 <div className='logo-options'>
                     <IoOptions />
                 </div>
+                <div className='collection'>
+                    <div className='arrow'>
+                        <FaArrowLeft className='left-arrow' />
+                        <FaArrowRight className='right-arrow' />
+                    </div>
 
-                <div className='arrow'>
-                    <FaArrowLeft className='left-arrow' />
-                    <FaArrowRight className='right-arrow' />
+                    <div className='header-texts'>
+                        <div className='home-text'>
+                            Home
+                        </div>
+                        <div className='workspaces-text'>
+                            WorkSpaces
+                        </div>
+                        <div className='apinetwork-test'>
+                            API Network
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className='header-texts'>
-                    <div className='home-text'>
-                        Home
-                    </div>
-                    <div className='workspaces-text'>
-                        WorkSpaces
-                    </div>
-                    <div className='apinetwork-test'>
-                        API Network
-                    </div>
-
-                </div>
             </div>
 
 

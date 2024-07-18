@@ -1,0 +1,53 @@
+.mainleft-div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #262626;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.my-workspace {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.left-myworkspace {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+
+
+}
+
+.left-collections-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.left-environments-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-history-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
