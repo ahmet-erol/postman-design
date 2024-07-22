@@ -4,6 +4,7 @@
     background-color: #262626;
     align-items: center;
     border-bottom: 1px solid #404040;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .collection {
@@ -79,6 +80,17 @@
     margin-left: 13px;
     font-family: "JetBrains Mono", monospace;
     font-size: 13px;
+}
+
+.header-texts div {
+    padding: 5px 10px;
+
+}
+
+.header-texts div:hover {
+    background-color: #3B3B3B;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .home-text {
@@ -212,7 +224,7 @@
 
 
 .noti-logo {
-    /* background-color: #262626; */
+    background-color: #262626;
     color: #A7A1A1;
     font-size: 20px;
     cursor: pointer;
