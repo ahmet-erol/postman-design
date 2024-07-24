@@ -4,6 +4,9 @@ import { FaRegUser } from "react-icons/fa";
 import { BsCollection } from "react-icons/bs";
 import { CiBoxes } from "react-icons/ci";
 import { RiHistoryFill } from "react-icons/ri";
+import { SlOptions } from "react-icons/sl";
+import { FaAngleRight } from "react-icons/fa6";
+
 
 
 
@@ -62,34 +65,36 @@ function Leftworkplace() {
                     </button>
                 </div>
 
-
                 <div className='options-buttons acordionmenu'>
+                    <div className='left-search'>
+                        <input type="text" className='left-search-box' placeholder='Search It' />
+                        <div className='service-options'>
+                            <SlOptions className='service-options-logo' />
+                        </div>
+                    </div>
                     <button className='left-collections-button'>
-                        Collections
+                        <FaAngleRight className='service-detailslogo' />
+                        AcentePoliceServisleri
                     </button>
                     <button className='left-environments-button'>
-                        Environments
+                        <FaAngleRight className='service-detailslogo' />
+                        IProteinSrv_preprod
                     </button>
                     <button className='left-history-button'>
-                        History
+                        <FaAngleRight className='service-detailslogo' />
+                        Payten
                     </button>
                     <button className='left-collections-button'>
-                        Collections
+                        <FaAngleRight className='service-detailslogo' />
+                        Police İşlemleri V3
                     </button>
                     <button className='left-environments-button'>
-                        Environments
+                        <FaAngleRight className='service-detailslogo' />
+                        PrivateInsurance.Api
                     </button>
                     <button className='left-history-button'>
-                        History
-                    </button>
-                    <button className='left-collections-button'>
-                        Collections
-                    </button>
-                    <button className='left-environments-button'>
-                        Environments
-                    </button>
-                    <button className='left-history-button'>
-                        History
+                        <FaAngleRight className='service-detailslogo' />
+                        Quick - Sağlık Poliçeleri
                     </button>
                 </div>
             </div>
