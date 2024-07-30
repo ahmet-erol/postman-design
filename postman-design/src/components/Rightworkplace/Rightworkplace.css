@@ -1,0 +1,78 @@
+.top-main-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 3;
+
+}
+
+.top-title-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #404040;
+    width: 100%;
+
+
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    color: #A7A1A1
+}
+
+.http-logo {
+    font-size: 13px;
+    color: turquoise;
+    padding: 12px;
+}
+
+.texts {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.police-button {
+    color: #A7A1A1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 3px 8px;
+}
+
+.police-button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #3B3B3B;
+    color: white;
+
+}
+
+.zeyil-button {
+    color: #A7A1A1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 3px 8px;
+}
+
+.zeyil-button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #3B3B3B;
+    color: white;
+
+}
+
+.space-between-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.top-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

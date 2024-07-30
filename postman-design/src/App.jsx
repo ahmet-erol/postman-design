@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className='contenttest'>
         <div><Leftworkplace /></div>
-        <div><Rightworkplace /></div>
+        <Rightworkplace />
       </div>
     </div>
   )
