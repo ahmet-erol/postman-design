@@ -1,5 +1,8 @@
 import React from 'react'
 import './Rightworkplace.css'
+import { IoSaveOutline } from "react-icons/io5";
+import { FaAngleDown } from "react-icons/fa6";
+
 
 
 
@@ -31,39 +34,35 @@ function Rightworkplace() {
                 <div className='top-right'>
                     <div className='save-btn'>
                         <button className='save-btn-inside'>
-
+                            <div className='save-icon'>
+                                <IoSaveOutline />
+                            </div>
+                            <div className='save-text'>
+                                Save
+                            </div>
+                        </button>
+                        <button className='save-btn-down'>
+                            <div className='save-down-icon'>
+                                <FaAngleDown />
+                            </div>
                         </button>
                     </div>
 
                     <div className='share-btn'>
-                        <button className='save-btn-inside'>
-
+                        <button className='share-btn-inside'>
+                            Share
                         </button>
 
                     </div>
 
 
                 </div>
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
+
+
+
+
     )
 }
 

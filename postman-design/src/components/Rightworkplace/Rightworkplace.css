@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #404040;
     width: 100%;
 
 
@@ -75,4 +74,74 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    padding: 12px;
+    gap: 10px;
+
+}
+
+.save-btn {
+    display: flex;
+}
+
+.save-btn-inside {
+    background-color: #212121;
+    color: #A7A1A1;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    gap: 4px;
+    font-family: "JetBrains Mono", monospace;
+    padding: 5px 10px;
+}
+
+.save-btn-inside:hover {
+    background-color: #3B3B3B;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    color: white;
+
+}
+
+.save-btn-down {
+    background-color: #212121;
+    color: #A7A1A1;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    font-family: "JetBrains Mono", monospace;
+    align-items: center;
+}
+
+.save-btn-down:hover {
+    background-color: #3B3B3B;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    color: white;
+
+}
+
+.share-btn {
+    display: flex;
+}
+
+.share-btn-inside {
+    background-color: #212121;
+    color: #A7A1A1;
+    cursor: pointer;
+    border: 1px solid #404040;
+    font-family: "JetBrains Mono", monospace;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.share-btn-inside:hover {
+    border-color: white;
+    cursor: pointer;
 }
