@@ -58,6 +58,32 @@ function Rightworkplace() {
 
                 </div>
             </div>
+
+            <div className='top-bottom-url'>
+                <input type="text" placeholder="Enter URL or paste text" />
+
+                <div className='top-bottom-right'>
+                <div className='top-bottom-right-save'>
+                    <button className='top-bottom-right-save-inside'>
+                        <div className='top-bottom-right-save-text'>
+                            Send
+                        </div>
+                    </button>
+                    <button className='top-bottom-right-save-down'>
+                    <div className='top-bottom-right-save-down-icon'>
+                                <FaAngleDown />
+                            </div>
+                    </button>
+
+                </div>
+
+            </div>
+            </div>
+
+            
+
+
+
         </div>
 
 
