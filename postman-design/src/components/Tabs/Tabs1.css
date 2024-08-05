@@ -1,0 +1,36 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "JetBrains Mono", monospace;
+    color: #A7A1A1;
+    font-size: 12px;
+    width: 800px;
+    height: 50px;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #212121;
+}
+
+.custom-table td.description {
+    word-break: break-word;
+
+.custom-table td {
+    vertical-align: top;
+}
+}
+
+.header-text-tab1 {
+    font-family: "JetBrains Mono", monospace;
+    color: #A7A1A1;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+

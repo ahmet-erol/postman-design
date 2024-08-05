@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Rightworkplace.css'
 import { IoSaveOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
+import Tabs1 from "../Tabs/Tabs1.jsx";
 
 
 
 
 
 function Rightworkplace() {
+
+        const [activeTab, setActiveTab] = useState(null);
+
+
     return (
         <div className='top-main-div'>
             <div className='top-title-div'>
@@ -80,6 +85,40 @@ function Rightworkplace() {
             </div>
             </div>
 
+
+
+
+
+
+            <div className='mid-top-main-div'>
+                <div className='mid-top-buttons'>
+                    <button onClick={() => setActiveTab('tab1')}> Params </button>
+                    <button onClick={() => setActiveTab('tab2')}> Authorization </button>
+                    <button onClick={() => setActiveTab('tab3')}> Headers </button>
+                    <button onClick={() => setActiveTab('tab4')}> Body </button>
+                    <button onClick={() => setActiveTab('tab5')}> Scripts </button>
+                    <button onClick={() => setActiveTab('tab6')}> Settings </button>
+                </div>
+
+                <div className='tab-container'>
+                    {activeTab === 'tab1' && (
+                        <div className='tab-content'>
+                           <div>
+                           <Tabs1 />
+                           </div>
+                        </div>
+
+
+
+                    )}
+
+                </div>
+
+
+
+
+            </div>
+
             
 
 
@@ -92,4 +131,4 @@ function Rightworkplace() {
     )
 }
 
-export default Rightworkplace
+export default Rightworkplace;

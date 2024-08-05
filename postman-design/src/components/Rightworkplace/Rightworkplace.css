@@ -267,3 +267,23 @@
     text-align: center;
     display: flex;
 }
+
+
+.mid-top-main-div{
+    width: 100%;
+    padding-left: 22px;
+}
+
+.mid-top-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #A7A1A1;
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+}
+
+
+.mid-top-buttons{
+    display: flex;
+    gap: 10px;
+}
