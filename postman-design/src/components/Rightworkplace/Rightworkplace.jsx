@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Rightworkplace.css'
 import { IoSaveOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
-import Tabs1 from "../Tabs/Tabs1.jsx";
+import Tabs1 from "../Tabs/Tabs1/Tabs1.jsx";
+import Tabs2 from '../Tabs/Tabs2/Tabs2.jsx';
 
 
 
@@ -107,10 +108,20 @@ function Rightworkplace() {
                            <Tabs1 />
                            </div>
                         </div>
+                     )}
+
+
+                         {activeTab === 'tab2' && (
+                        <div className='tab-content'>
+                           <div>
+                           <Tabs2 />
+                           </div>
+                        </div>
+                     )}
 
 
 
-                    )}
+
 
                 </div>
 

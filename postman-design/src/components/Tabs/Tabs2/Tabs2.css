@@ -1,0 +1,38 @@
+.tab2-main-div {
+  display: flex;
+}
+
+.tab2-left-div {
+  border-right: 1px solid #404040;
+  height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  color: #a7a1a1;
+}
+
+.tab2-left-div input {
+  background-color: #404040;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  height: 25px;
+  width: 238px;
+  padding-left: 12px;
+  border: 0.5px solid #cec8c8;
+}
+
+.tab2-left-div p {
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+.tab2-right-div {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  color: #a7a1a1;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+}
