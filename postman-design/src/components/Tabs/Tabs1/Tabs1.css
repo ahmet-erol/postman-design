@@ -4,7 +4,6 @@
   font-family: "JetBrains Mono", monospace;
   color: #a7a1a1;
   font-size: 12px;
-  width: 800px;
   height: 50px;
 }
 
@@ -41,7 +40,7 @@
 
 .custom-table input {
   background-color: transparent;
-  width: 404px;
+  width: 100%;
   border: none;
   outline: none;
   color: #a7a1a1;

@@ -3,7 +3,7 @@
     background-color: #262626;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height:calc(100vh - 62px);
     font-family: "JetBrains Mono", monospace;
     border-right: 1px solid #404040;
 
@@ -166,8 +166,7 @@
 .options-buttons {
     border-left: 1px solid #404040;
     width: 100%;
-    height: 100vh;
-
+    height: calc(100vh - 105px);
 }
 
 .left-search {

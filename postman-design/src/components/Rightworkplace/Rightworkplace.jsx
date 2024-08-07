@@ -64,7 +64,7 @@ function Rightworkplace() {
 
                 </div>
             </div>
-
+            <div className='top-content'>
             <div className='top-bottom-url'>
                 <input type="text" placeholder="Enter URL or paste text" />
 
@@ -127,6 +127,8 @@ function Rightworkplace() {
 
 
 
+
+            </div>
 
             </div>
 
