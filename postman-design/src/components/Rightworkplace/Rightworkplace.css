@@ -180,6 +180,7 @@
   font-family: "JetBrains Mono", monospace;
   color: white;
   font-size: 12px;
+  position: relative;
 }
 
 .dropdown-menu {
@@ -196,38 +197,69 @@
 }
 .get {
   color: #6bdd9a;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
+
+.get:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
 .post {
   color: #ffe47e;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
+}
+
+.post:hover {
+  background-color: #212121;
+  border-radius: 5px;
 }
 .put {
   color: #74aef6;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
+
+.put:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
 .patch {
   color: #c0a8e1;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
+
+.patch:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
 .delete {
   color: #f79a8e;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
+
+.delete:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
 .head {
   color: #69d797;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
 }
+.head:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
 .optionses {
   color: #f15eb0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
+}
+.optionses:hover {
+  background-color: #212121;
+  border-radius: 5px;
 }
 
 .top-bottom-url input {

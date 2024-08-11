@@ -62,7 +62,7 @@ function Rightworkplace() {
         <div className="top-bottom-url">
           <div className="custom-dropdown">
             <button
-              className={`dropdown-button ${selectedOption}`}
+              className={`dropdown-button ${selectedOption.toLowerCase()}`}
               onClick={toggleDropdown}
               onChange={handleSelectChange}
             >

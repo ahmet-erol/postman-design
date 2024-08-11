@@ -32,8 +32,6 @@ function Tabs1() {
             </tr>
           </tbody>
         </table>
-
-        
       </div>
     </div>
   );
