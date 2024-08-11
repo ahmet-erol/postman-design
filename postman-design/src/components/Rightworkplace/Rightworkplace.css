@@ -1,290 +1,336 @@
 .top-main-div {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex: 3;
-    flex-direction: column;
-
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: 3;
+  flex-direction: column;
 }
 
 .top-title-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .top-left {
-    display: flex;
-    align-items: center;
-    font-family: "JetBrains Mono", monospace;
-    color: #A7A1A1
+  display: flex;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
 }
 
 .http-logo {
-    font-size: 13px;
-    color: turquoise;
-    padding: 12px;
+  font-size: 13px;
+  color: turquoise;
+  padding: 12px;
 }
 
 .texts {
-    display: flex;
-    gap: 10px;
-    font-size: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
 }
 
 .police-button {
-    color: #A7A1A1;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 3px 8px;
+  color: #a7a1a1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 3px 8px;
 }
 
 .police-button:hover {
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #3B3B3B;
-    color: white;
-
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  color: white;
 }
 
 .zeyil-button {
-    color: #A7A1A1;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 3px 8px;
+  color: #a7a1a1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 3px 8px;
 }
 
 .zeyil-button:hover {
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #3B3B3B;
-    color: white;
-
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  color: white;
 }
 
 .space-between-buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-
 .top-right {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
-
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
 }
 
 .save-btn {
-    display: flex;
+  display: flex;
 }
 
 .save-btn-inside {
-    background-color: #212121;
-    color: #A7A1A1;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    gap: 4px;
-    font-family: "JetBrains Mono", monospace;
-    padding: 5px 10px;
-    align-items: center;
-    text-align: center;
+  background-color: #212121;
+  color: #a7a1a1;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  gap: 4px;
+  font-family: "JetBrains Mono", monospace;
+  padding: 5px 10px;
+  align-items: center;
+  text-align: center;
 }
 
-.save-icon{
-    align-items: center;
-    text-align: center;
-    display: flex;
+.save-icon {
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
-.save-text{
-    align-items: center;
-    text-align: center;
-    display: flex;
+.save-text {
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
-
 
 .save-btn-inside:hover {
-    background-color: #3B3B3B;
-    cursor: pointer;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 0;
-    color: white;
-
+  background-color: #3b3b3b;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  color: white;
 }
 
 .save-btn-down {
-    background-color: #212121;
-    color: #A7A1A1;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    font-family: "JetBrains Mono", monospace;
-    align-items: center;
+  background-color: #212121;
+  color: #a7a1a1;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  align-items: center;
 }
 
 .save-btn-down:hover {
-    background-color: #3B3B3B;
-    cursor: pointer;
-    border-top-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 5px;
-    color: white;
-
+  background-color: #3b3b3b;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  color: white;
 }
 
-.save-down-icon{
-    align-items: center;
-    text-align: center;
-    display: flex;
+.save-down-icon {
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
 .share-btn {
-    display: flex;
+  display: flex;
 }
 
 .share-btn-inside {
-    background-color: #212121;
-    color: #A7A1A1;
-    cursor: pointer;
-    border: 1px solid #404040;
-    font-family: "JetBrains Mono", monospace;
-    border-radius: 5px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+  background-color: #212121;
+  color: #a7a1a1;
+  cursor: pointer;
+  border: 1px solid #404040;
+  font-family: "JetBrains Mono", monospace;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
 }
 
 .share-btn-inside:hover {
-    border-color: white;
-    cursor: pointer;
+  border-color: white;
+  cursor: pointer;
 }
 
-.top-bottom-url{
-    display: flex;
-    align-items: center;
-    padding-left: 13px;
+.top-bottom-url {
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  position: relative;
 }
 
-.top-bottom-url input{
-    width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    background-color: #404040;
-    border: 0.5px solid #cec8c8;
-    outline: none;
-    font-family: "JetBrains Mono", monospace;
-    color: white;
-    padding-left: 10px;
-    font-size: 12px;
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  width: 66px;
+  height: 33.33px;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #404040;
+  border: 0.5px solid #cec8c8;
+  outline: none;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 12px;
 }
 
+.dropdown-menu {
+  position: absolute;
+  background-color: #404040;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.get {
+  color: #6bdd9a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.post {
+  color: #ffe47e;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.put {
+  color: #74aef6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.patch {
+  color: #c0a8e1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.delete {
+  color: #f79a8e;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.head {
+  color: #69d797;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.optionses {
+  color: #f15eb0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-
+.top-bottom-url input {
+  width: 100%;
+  height: 30px;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #404040;
+  border: 0.5px solid #cec8c8;
+  outline: none;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  padding-left: 10px;
+  font-size: 12px;
+}
 
 .top-bottom-right {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
-
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
 }
 
 .top-bottom-right-save {
-    display: flex;
+  display: flex;
 }
 
 .top-bottom-right-save-inside {
-    background-color: #097BED;
-    color: white;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    gap: 4px;
-    font-family: "JetBrains Mono", monospace;
-    padding: 5px 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 0;
-    height: 33px;
-    align-items: center;
+  background-color: #097bed;
+  color: white;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  gap: 4px;
+  font-family: "JetBrains Mono", monospace;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  height: 33px;
+  align-items: center;
 }
 
 .top-bottom-right-save-inside:hover {
-    background-color: #0265D2;
-    cursor: pointer;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 0;
-    color: white;
-
+  background-color: #0265d2;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  color: white;
 }
 
 .top-bottom-right-save-down {
-    background-color: #097BED;
-    color: white;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    font-family: "JetBrains Mono", monospace;
-    align-items: center;
-    border-top-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 5px;
-    height: 33px;
-    align-items: center;
+  background-color: #097bed;
+  color: white;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  align-items: center;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  height: 33px;
+  align-items: center;
 }
-    
-
 
 .top-bottom-right-save-down:hover {
-    background-color: #0265D2;
-    cursor: pointer;
-    border-top-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 5px;
-    color: white;
-
+  background-color: #0265d2;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  color: white;
 }
 
-.top-bottom-right-save-down-icon{
-    align-items: center;
-    text-align: center;
-    display: flex;
+.top-bottom-right-save-down-icon {
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
-
 
 .mid-top-buttons button {
-    background-color: transparent;
-    border: none;
-    color: #A7A1A1;
-    font-family: "JetBrains Mono", monospace;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #a7a1a1;
+  font-family: "JetBrains Mono", monospace;
+  cursor: pointer;
 }
 
-
-.mid-top-buttons{
-    display: flex;
-    gap: 10px;
-    border-bottom: 1px solid #404040;
-    padding-left: 7px;
+.mid-top-buttons {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #404040;
+  padding-left: 7px;
 }
 
-.top-content{
-    width: 100%;
-    box-sizing: border-box;
+.top-content {
+  width: 100%;
+  box-sizing: border-box;
 }

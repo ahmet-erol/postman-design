@@ -1,10 +1,11 @@
 .custom-table {
-  width: 100%;
+  width: 97%;
   border-collapse: collapse;
   font-family: "JetBrains Mono", monospace;
   color: #a7a1a1;
   font-size: 12px;
   height: 50px;
+  margin-left: 13px;
 }
 
 .custom-table th,
@@ -32,12 +33,9 @@
   font-size: 12px;
   padding-top: 10px;
   padding-bottom: 8px;
+  padding-left: 13px;
 }
-
-
-
-
-
+  
 .custom-table input {
   background-color: transparent;
   width: 100%;

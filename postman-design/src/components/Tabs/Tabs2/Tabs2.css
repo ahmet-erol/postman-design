@@ -4,10 +4,11 @@
 
 .tab2-left-div {
   border-right: 1px solid #404040;
-  height: 100vh;
+  height: calc(100vh - 194px);
   font-family: "JetBrains Mono", monospace;
   font-size: 13px;
   color: #a7a1a1;
+  padding-left: 13px;
 }
 
 .tab2-left-div input {
@@ -17,15 +18,16 @@
   outline: none;
   color: white;
   font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
   height: 25px;
-  width: 238px;
-  padding-left: 12px;
+  width: 207px;
+  padding-left: 5px;
   border: 0.5px solid #cec8c8;
 }
 
 .tab2-left-div p {
   padding-right: 10px;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .tab2-right-div {

@@ -8,8 +8,8 @@ function Tabs2() {
         <h4>Auth Type</h4>
         <input type="text" value="Inherit auth from parent" />
         <p>
-          The authorization header will be automatically generated when <br />
-          you send the request. Learn more about authorization.
+          The authorization header will be <br />automatically generated when 
+          you <br />send the request. Learn more about authorization.
         </p>
       </div>
 
