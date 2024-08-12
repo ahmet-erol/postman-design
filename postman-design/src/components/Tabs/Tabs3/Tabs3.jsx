@@ -55,9 +55,11 @@ function Tabs3() {
 
       <div className="down-div-tab3">
         Response
-        <div className="response-icon">
+        <div className="response-icon-tab3">
           <SiPostman />
-          <div className="response-icontext">Click Send to get a response</div>
+          <div className="response-icontext-tab3">
+            Click Send to get a response
+          </div>
         </div>
       </div>
     </div>
