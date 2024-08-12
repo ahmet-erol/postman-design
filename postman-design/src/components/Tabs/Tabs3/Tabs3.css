@@ -1,4 +1,4 @@
-.custom-table {
+.custom-table-tab3 {
   width: 97%;
   border-collapse: collapse;
   font-family: "JetBrains Mono", monospace;
@@ -8,26 +8,26 @@
   margin-left: 13px;
 }
 
-.custom-table th,
-.custom-table td {
+.custom-table-tab3 th,
+.custom-table-tab3 td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-.custom-table th {
+.custom-table-tab3 th {
   background-color: #212121;
 }
 
-.custom-table td.description {
+.custom-table-tab3 td.description {
   word-break: break-word;
 
-  .custom-table td {
+  .custom-table-tab3 td {
     vertical-align: top;
   }
 }
 
-.header-text-tab1 {
+.header-text-tab3 {
   font-family: "JetBrains Mono", monospace;
   color: #a7a1a1;
   font-size: 12px;
@@ -36,7 +36,7 @@
   padding-left: 13px;
 }
 
-.custom-table input {
+.custom-table-tab3 input {
   background-color: transparent;
   width: 100%;
   border: none;

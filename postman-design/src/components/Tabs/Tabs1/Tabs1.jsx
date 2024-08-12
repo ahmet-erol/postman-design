@@ -3,9 +3,8 @@ import "./Tabs1.css";
 
 function Tabs1() {
   return (
-    <div className="main-tab1-div">
+    <div className="main-tab-div">
       <div className="header-text-tab1">Query Params</div>
-
       <div>
         <table class="custom-table">
           <thead>
