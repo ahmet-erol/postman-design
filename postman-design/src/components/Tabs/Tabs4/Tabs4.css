@@ -1,0 +1,17 @@
+.top-tabs4-div {
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  color: #a7a1a1;
+  gap: 10px;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 8px; /* Radyo butonunun metinden uzaklığı */
+}
+
+.top-tabs4-div div {
+  display: flex;
+  align-items: center;
+}

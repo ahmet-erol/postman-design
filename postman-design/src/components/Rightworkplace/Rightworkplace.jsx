@@ -5,6 +5,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import Tabs1 from "../Tabs/Tabs1/Tabs1.jsx";
 import Tabs2 from "../Tabs/Tabs2/Tabs2.jsx";
 import Tabs3 from "../Tabs/Tabs3/Tabs3.jsx";
+import Tabs4 from "../Tabs/Tabs4/Tabs4.jsx";
 
 function Rightworkplace() {
   const [activeTab, setActiveTab] = useState(null);
@@ -155,6 +156,14 @@ function Rightworkplace() {
               <div className="tab-content">
                 <div>
                   <Tabs3 />
+                </div>
+              </div>
+            )}
+
+            {activeTab === "tab4" && (
+              <div className="tab-content">
+                <div>
+                  <Tabs4 />
                 </div>
               </div>
             )}
