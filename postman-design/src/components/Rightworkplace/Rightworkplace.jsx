@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Rightworkplace.css";
 import { IoSaveOutline } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
@@ -9,9 +9,9 @@ import Tabs4 from "../Tabs/Tabs4/Tabs4.jsx";
 
 function Rightworkplace() {
   const [activeTab, setActiveTab] = useState(null);
-
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("GET");
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -26,16 +26,27 @@ function Rightworkplace() {
     setSelectedOption(event.target.value);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="top-main-div">
       <div className="top-title-div">
         <div className="top-left">
           <div className="http-logo">HTTP</div>
-
           <div className="texts">
             <div className="police-button">Poliçe İşlemleri</div>
             <div className="space-between-buttons">/</div>
-
             <div className="zeyil-button">Zeyil Sil</div>
           </div>
         </div>
@@ -62,7 +73,7 @@ function Rightworkplace() {
       </div>
       <div className="top-content">
         <div className="top-bottom-url">
-          <div className="custom-dropdown">
+          <div className="custom-dropdown" ref={dropdownRef}>
             <button
               className={`dropdown-button ${selectedOption.toLowerCase()}`}
               onClick={toggleDropdown}
@@ -138,33 +149,22 @@ function Rightworkplace() {
           <div className="tab-container">
             {activeTab === "tab1" && (
               <div className="tab-content">
-                <div>
-                  <Tabs1 />
-                </div>
+                <Tabs1 />
               </div>
             )}
-
             {activeTab === "tab2" && (
               <div className="tab-content">
-                <div>
-                  <Tabs2 />
-                </div>
+                <Tabs2 />
               </div>
             )}
-
             {activeTab === "tab3" && (
               <div className="tab-content">
-                <div>
-                  <Tabs3 />
-                </div>
+                <Tabs3 />
               </div>
             )}
-
             {activeTab === "tab4" && (
               <div className="tab-content">
-                <div>
-                  <Tabs4 />
-                </div>
+                <Tabs4 />
               </div>
             )}
           </div>

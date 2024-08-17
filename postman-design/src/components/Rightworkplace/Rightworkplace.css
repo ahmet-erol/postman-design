@@ -183,6 +183,12 @@
   position: relative;
 }
 
+.dropdown-button:hover {
+  border-radius: 5px 0 0 5px !important;
+  background-color: #404040 !important;
+  cursor: pointer;
+}
+
 .dropdown-menu {
   position: absolute;
   background-color: #404040;
