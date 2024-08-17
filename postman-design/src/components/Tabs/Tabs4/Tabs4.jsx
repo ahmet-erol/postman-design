@@ -160,6 +160,16 @@ function Tabs4() {
             </div>
           )}
         </div>
+        <div className="binary-option-desing">
+          {selectedForm === "binary" && (
+            <div className="binary-design">select file</div>
+          )}
+        </div>
+        <div className="graphql-option-desing">
+          {selectedForm === "graphql" && (
+            <div className="graphql-design">graphql</div>
+          )}
+        </div>
       </div>
 
       <div className="bottom-tabs4-div">
