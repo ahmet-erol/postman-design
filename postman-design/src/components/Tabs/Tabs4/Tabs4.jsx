@@ -162,7 +162,7 @@ function Tabs4() {
         <div className="raw-option-desing">
           {selectedForm === "raw" && (
             <div className="raw-design">
-              <input type="text" className="raw-input" />
+              <textarea class="raw-input" rows="10" cols="100"></textarea>
             </div>
           )}
         </div>
@@ -187,7 +187,15 @@ function Tabs4() {
           )}
         </div>
         <div className="graphql-option-desing">
-          {selectedForm === "graphql" && <div className="graphql-design"></div>}
+          {selectedForm === "graphql" && (
+            <div className="graphql-design">
+              <div className="raw-design">
+                <textarea class="raw-input" rows="10" cols="100"></textarea>
+
+                <textarea class="raw-input" rows="10" cols="100"></textarea>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
