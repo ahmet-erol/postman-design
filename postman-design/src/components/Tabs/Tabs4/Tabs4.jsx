@@ -4,6 +4,12 @@ import { SiPostman } from "react-icons/si";
 
 function Tabs4() {
   const [selectedForm, setSelectedForm] = useState("none");
+  const [selectedFile, setSelectedFile] = useState("none");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="main-tabs4-div">
@@ -162,13 +168,26 @@ function Tabs4() {
         </div>
         <div className="binary-option-desing">
           {selectedForm === "binary" && (
-            <div className="binary-design">select file</div>
+            <div className="binary-design">
+              <div className="binary-general">
+                <button
+                  className={`select-file-button ${selectedFile.toLowerCase()}`}
+                  onClick={toggleDropdown}
+                >
+                  Select File
+                </button>
+
+                {isOpen && (
+                  <div className="select-file">
+                    <button>New file from local machine</button>
+                  </div>
+                )}
+              </div>
+            </div>
           )}
         </div>
         <div className="graphql-option-desing">
-          {selectedForm === "graphql" && (
-            <div className="graphql-design">graphql</div>
-          )}
+          {selectedForm === "graphql" && <div className="graphql-design"></div>}
         </div>
       </div>
 
