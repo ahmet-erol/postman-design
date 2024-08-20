@@ -47,7 +47,7 @@ input[type="radio"] {
 
 .option-tab-contents {
   border-bottom: 1px solid #404040;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .none-design {
@@ -129,3 +129,61 @@ input[type="radio"] {
   justify-content: center;
   display: flex;
 }
+
+.select-file-button {
+  background-color: #404040;
+  border: 0.5px solid #cec8c8;
+  outline: none;
+  font-family: "JetBrains Mono", monospace;
+  color: rgb(164, 161, 161);
+  border-radius: 3px;
+  font-size: 10px;
+  width: 193px;
+  height: 25px;
+  text-align: left;
+}
+
+.binary-design {
+  padding: 10px;
+}
+
+.select-file-dropdown {
+  background-color: #404040;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 182px;
+  height: 70px;
+  font-size: 10px;
+  font-family: "JetBrains Mono", monospace;
+  outline: none;
+  color: white;
+  padding: 5px;
+  margin-top: 4px;
+}
+
+.new-file-button {
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.new-file-button:hover {
+  background-color: #212121;
+  border-radius: 5px;
+}
+.select-file-header {
+  padding: 5px;
+  font-size 11px;
+  border-top: 1px solid white;
+  font-weight: bold; 
+}
+
+
+.select-file-text {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+
+

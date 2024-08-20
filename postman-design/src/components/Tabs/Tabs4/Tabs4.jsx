@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Tabs4.css";
 import { SiPostman } from "react-icons/si";
+import { FaPlus } from "react-icons/fa6";
 
 function Tabs4() {
   const [selectedForm, setSelectedForm] = useState("none");
   const [selectedFile, setSelectedFile] = useState("none");
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="main-tabs4-div">
@@ -168,7 +183,7 @@ function Tabs4() {
         </div>
         <div className="binary-option-desing">
           {selectedForm === "binary" && (
-            <div className="binary-design">
+            <div className="binary-design" ref={dropdownRef}>
               <div className="binary-general">
                 <button
                   className={`select-file-button ${selectedFile.toLowerCase()}`}
@@ -178,8 +193,15 @@ function Tabs4() {
                 </button>
 
                 {isOpen && (
-                  <div className="select-file">
-                    <button>New file from local machine</button>
+                  <div className="select-file-dropdown">
+                    <div className="new-file-button">
+                      <FaPlus />
+                      New file from local machine
+                    </div>
+                    <div className="select-file-header">
+                      Files uploaded to team
+                    </div>
+                    <div className="select-file-text">No file found</div>
                   </div>
                 )}
               </div>
