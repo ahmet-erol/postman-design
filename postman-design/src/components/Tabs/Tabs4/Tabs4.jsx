@@ -212,9 +212,14 @@ function Tabs4() {
           {selectedForm === "graphql" && (
             <div className="graphql-design">
               <div className="raw-design">
-                <textarea class="raw-input" rows="10" cols="100"></textarea>
-
-                <textarea class="raw-input" rows="10" cols="100"></textarea>
+                <div className="raw-input-first">
+                  QUERY
+                  <textarea class="raw-input" rows="10" cols="100"></textarea>
+                </div>
+                <div className="raw-input-second">
+                  GRAPHQL VARIABLES
+                  <textarea class="raw-input" rows="10" cols="100"></textarea>
+                </div>
               </div>
             </div>
           )}
