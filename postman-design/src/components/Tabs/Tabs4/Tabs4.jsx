@@ -213,11 +213,11 @@ function Tabs4() {
             <div className="graphql-design">
               <div className="raw-design">
                 <div className="raw-input-first">
-                  QUERY
+                  <p className="query">QUERY</p>
                   <textarea class="raw-input" rows="10" cols="100"></textarea>
                 </div>
                 <div className="raw-input-second">
-                  GRAPHQL VARIABLES
+                  <p className="variables">GRAPHQL VARIABLES</p>
                   <textarea class="raw-input" rows="10" cols="100"></textarea>
                 </div>
               </div>

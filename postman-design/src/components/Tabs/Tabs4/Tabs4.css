@@ -125,10 +125,19 @@ input[type="radio"] {
   line-height: 20px;
 }
 
-.raw-design {
-  justify-content: center;
-  display: flex;
-}
+
+  .raw-design {
+    display: flex;
+    gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 11px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+  }
+  
+
 
 .select-file-button {
   background-color: #404040;
@@ -186,4 +195,10 @@ input[type="radio"] {
 }
 
 
+.query{
+  margin-bottom: 5px;
+}
 
+.variables{
+  margin-bottom: 5px;
+}
