@@ -125,19 +125,16 @@ input[type="radio"] {
   line-height: 20px;
 }
 
-
-  .raw-design {
-    display: flex;
-    gap: 10px;
-    font-family: "JetBrains Mono", monospace;
-    color: white;
-    font-size: 11px;
-    align-items: center;
-    justify-content: center;
-    padding-left: 25px;
-  }
-  
-
+.raw-design {
+  display: flex;
+  gap: 10px;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+}
 
 .select-file-button {
   background-color: #404040;
@@ -183,22 +180,20 @@ input[type="radio"] {
 }
 .select-file-header {
   padding: 5px;
-  font-size 11px;
+  font-size: 11px;
   border-top: 1px solid white;
-  font-weight: bold; 
+  font-weight: bold;
 }
-
 
 .select-file-text {
   padding: 5px;
   margin-left: 5px;
 }
 
-
-.query{
+.query {
   margin-bottom: 5px;
 }
 
-.variables{
+.variables {
   margin-bottom: 5px;
 }

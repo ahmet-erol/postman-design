@@ -6,6 +6,7 @@ import Tabs1 from "../Tabs/Tabs1/Tabs1.jsx";
 import Tabs2 from "../Tabs/Tabs2/Tabs2.jsx";
 import Tabs3 from "../Tabs/Tabs3/Tabs3.jsx";
 import Tabs4 from "../Tabs/Tabs4/Tabs4.jsx";
+import Tabs5 from "../Tabs/Tabs5/Tabs5.jsx";
 
 function Rightworkplace() {
   const [activeTab, setActiveTab] = useState(null);
@@ -108,7 +109,7 @@ function Rightworkplace() {
                   HEAD
                 </div>
                 <div
-                  className="optionses"
+                  className="optionsable"
                   onClick={() => handleOptionClick("options")}
                 >
                   OPTIONS
@@ -165,6 +166,11 @@ function Rightworkplace() {
             {activeTab === "tab4" && (
               <div className="tab-content">
                 <Tabs4 />
+              </div>
+            )}
+            {activeTab === "tab5" && (
+              <div className="tab-content">
+                <Tabs5 />
               </div>
             )}
           </div>
