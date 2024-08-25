@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   border-right: 1px solid #404040;
-  height: 30vh;
+  height: 28vh;
 }
 .tabs5-right {
   flex: 1;
@@ -23,16 +23,14 @@
   color: #a7a1a1;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: 12px;
 }
 
 .tabs5-right-openpackages {
-  font-size: 12px;
   font-family: "JetBrains Mono", monospace;
   color: #a7a1a1;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: 9px;
+  font-size: 10px;
   text-decoration: underline;
   display: flex;
 }
@@ -61,8 +59,77 @@
   border: none;
   outline: none;
   width: 100%;
-  height: 95%;
+  height: 94%;
   background-color: #212121;
   font-family: "JetBrains Mono", monospace;
   color: #b1adad;
+}
+
+.tabs5-right-top {
+  border-bottom: 1px solid #404040;
+}
+
+.tabs5-right-openpackages {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.tabs5-right-openpackages:hover {
+  color: rgb(62, 62, 230);
+}
+
+.tabs5-right-down {
+  position: relative;
+}
+
+.tabs5-right-down-slidercontent {
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+  font-size: 10px;
+  padding-left: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.tabs5-right-down:hover .tabs5-right-down-slidercontent {
+  max-height: 100px;
+}
+
+.tabs5-right-down-slidercontent p {
+  cursor: pointer;
+}
+
+.snippets {
+  font-size: 12px;
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+}
+
+.tabs5-right-down-slidercontent::-webkit-scrollbar-track {
+  background-color: #212121;
+}
+
+.tabs5-right-down-slidercontent::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b;
+  border-radius: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+textarea::placeholder {
+  color: #787773;
+  background-color: #3e3d32;
+}
+
+#textarea {
+  color: #787773;
 }
