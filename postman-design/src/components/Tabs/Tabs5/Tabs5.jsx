@@ -1,6 +1,7 @@
 import React from "react";
 import "./Tabs5.css";
 import { BsArrowRight } from "react-icons/bs";
+import { SiPostman } from "react-icons/si";
 
 function Tabs5() {
   return (
@@ -44,6 +45,15 @@ function Tabs5() {
             <p>Clear a global variable</p>
             <p>Clear a colletion variable</p>
             <p>Send a request</p>
+          </div>
+        </div>
+      </div>
+      <div className="tabs5-bottom">
+        Response
+        <div className="response-icon-tab4">
+          <SiPostman />
+          <div className="response-icontext-tab4">
+            Click Send to get a response
           </div>
         </div>
       </div>
