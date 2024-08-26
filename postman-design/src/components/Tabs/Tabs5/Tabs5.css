@@ -1,10 +1,15 @@
 .tabs5-main-div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #212121;
-  border-bottom: 1px solid #404040;
 }
 
+.tabs5-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #404040;
+}
 .tabs5-left {
   display: flex;
   flex-direction: column;
@@ -137,4 +142,10 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 13px;
 }
