@@ -1,0 +1,26 @@
+.tops6-top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.tabs6-top div {
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+  font-size: 11px;
+  font-weight: 100;
+  padding-left: 13px;
+  padding-top: 10px;
+  line-height: 0.9;
+}
+
+.header-p {
+  font-weight: 1000;
+  font-size: 12px;
+}
+
+.tabs6-top p {
+  width: 500px;
+}

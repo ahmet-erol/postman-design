@@ -7,6 +7,7 @@ import Tabs2 from "../Tabs/Tabs2/Tabs2.jsx";
 import Tabs3 from "../Tabs/Tabs3/Tabs3.jsx";
 import Tabs4 from "../Tabs/Tabs4/Tabs4.jsx";
 import Tabs5 from "../Tabs/Tabs5/Tabs5.jsx";
+import Tabs6 from "../Tabs/Tabs6/Tabs6.jsx";
 
 function Rightworkplace() {
   const [activeTab, setActiveTab] = useState(null);
@@ -171,6 +172,11 @@ function Rightworkplace() {
             {activeTab === "tab5" && (
               <div className="tab-content">
                 <Tabs5 />
+              </div>
+            )}
+            {activeTab === "tab6" && (
+              <div className="tab-content">
+                <Tabs6 />
               </div>
             )}
           </div>
