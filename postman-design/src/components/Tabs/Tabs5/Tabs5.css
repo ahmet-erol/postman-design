@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   border-right: 1px solid #404040;
-  height: 28vh;
 }
 .tabs5-right {
   flex: 1;
@@ -60,6 +59,25 @@
   font-size: 12px;
 }
 
+.tabs5-left-button.active {
+  background-color: #2b2b2b;
+}
+
+.tabs5-left-buttonsecond {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+  text-align: center;
+  width: 106px;
+  height: 41px;
+  font-size: 12px;
+}
+
+.tabs5-left-buttonsecond.active {
+  background-color: #2b2b2b;
+}
 .middle-textarea {
   border: none;
   outline: none;

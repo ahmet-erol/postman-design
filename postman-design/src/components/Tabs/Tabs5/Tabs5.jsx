@@ -1,25 +1,52 @@
+import { useState } from "react";
 import React from "react";
 import "./Tabs5.css";
 import { BsArrowRight } from "react-icons/bs";
 import { SiPostman } from "react-icons/si";
 
 function Tabs5() {
+  const [activeButton, setActiveButton] = useState("prerequest");
   return (
     <div className="tabs5-main-div">
       <div className="tabs5-top">
         <div className="tabs5-left">
-          <button className="tabs5-left-button">Pre-request</button>
+          <button
+            className={`tabs5-left-button ${
+              activeButton === "prerequest" ? "active" : ""
+            }`}
+            onClick={() => setActiveButton("prerequest")}
+          >
+            Pre-request
+          </button>
 
-          <button className="tabs5-left-button">Post-response</button>
+          <button
+            className={`tabs5-left-buttonsecond ${
+              activeButton === "postresponse" ? "active" : ""
+            }`}
+            onClick={() => setActiveButton("postresponse")}
+          >
+            Post-response
+          </button>
         </div>
 
         <div className="tabs5-middle">
-          <textarea
-            name="text-area"
-            id="textarea"
-            placeholder="Use JavaScript to configure this request dynamically."
-            className="middle-textarea"
-          ></textarea>
+          {activeButton === "prerequest" && (
+            <textarea
+              name="text-area"
+              id="textarea"
+              placeholder="Use JavaScript to configure this request dynamically."
+              className="middle-textarea"
+            ></textarea>
+          )}
+
+          {activeButton === "postresponse" && (
+            <textarea
+              name="text-area"
+              id="textarea"
+              placeholder="Use JavaScript to write tests, visualize response, more ."
+              className="middle-textarea"
+            ></textarea>
+          )}
         </div>
 
         <div className="tabs5-right">
