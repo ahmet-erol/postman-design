@@ -1,20 +1,27 @@
 import React from "react";
 import "./Tabs6.css";
+import { SiPostman } from "react-icons/si";
 
 function Tabs6() {
   return (
     <div className="tabs6-main-div">
       <div className="tabs6-top">
         <div className="item1">
-          <p className="header-p">HTTP Version</p>
-          <p>Select the HTTP version to use for sending the request.</p>
+          <div className="item1-1">
+            <p className="header-p">HTTP Version</p>
+            <span className="new-span">NEW</span>
+          </div>
+          <div className="item1-2">
+            <p>Select the HTTP version to use for sending the request.</p>
+          </div>
         </div>
 
         <div className="item2">
           <p className="header-p">Enable SSL certificate verification</p>
           <p>
             Verify SSL certificates when sending a request. Verification
-            failures will result in the request being aborted.
+            failures <br />
+            will result in the request being aborted.
           </p>
         </div>
 
@@ -60,8 +67,8 @@ function Tabs6() {
           <p className="header-p">Disable cookie jar</p>
           <p>
             Prevent cookies used in this request from being stored in the cookie
-            jar. Existing cookies in the cookie jar will not be added as headers
-            for this request.
+            jar. Existing cookies <br />
+            in the cookie jar will not be added as headers for this request.
           </p>
         </div>
 
@@ -84,7 +91,8 @@ function Tabs6() {
           </p>
           <p>
             Specify the SSL and TLS protocol versions to be disabled during
-            handshake. All other protocols will be enabled.
+            handshake. All other <br />
+            protocols will be enabled.
           </p>
         </div>
 
@@ -96,8 +104,15 @@ function Tabs6() {
           </p>
         </div>
       </div>
-
-      <div className="tabs6-bottom"></div>
+      <div className="tabs6-bottom">
+        Response
+        <div className="response-icon-tab4">
+          <SiPostman />
+          <div className="response-icontext-tab4">
+            Click Send to get a response
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
