@@ -1,6 +1,7 @@
 import React from "react";
 import "./Tabs6.css";
 import { SiPostman } from "react-icons/si";
+import Switch from "../../Switch/Switch";
 
 function Tabs6() {
   return (
@@ -13,6 +14,9 @@ function Tabs6() {
           </div>
           <div className="item1-2">
             <p>Select the HTTP version to use for sending the request.</p>
+          </div>
+          <div>
+            <Switch />
           </div>
         </div>
 
