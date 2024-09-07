@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import "./Switch.css";
 
 function Switch() {
   const [isOn, setIsOn] = useState(false);
@@ -9,24 +9,11 @@ function Switch() {
   };
 
   return (
-    <div className="flex items-center space-x-2">
-      <div
-        onClick={toggleSwitch}
-        className={`relative inline-block w-12 h-6 cursor-pointer transition-colors duration-200 ${
-          isOn ? "bg-blue-500" : "bg-gray-500"
-        } rounded-full`}
-      >
-        <span
-          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow-md transform transition-transform duration-200 ${
-            isOn ? "translate-x-6" : "translate-x-1"
-          }`}
-        ></span>
+    <div className="switch-container">
+      <div onClick={toggleSwitch} className={`switch ${isOn ? "on" : "off"}`}>
+        <span className={`switch-button ${isOn ? "on" : "off"}`}></span>
       </div>
-      <span
-        className={`text-sm font-medium ${
-          isOn ? "text-white" : "text-gray-400"
-        }`}
-      >
+      <span className={`switch-label ${isOn ? "on" : "off"}`}>
         {isOn ? "ON" : "OFF"}
       </span>
     </div>
