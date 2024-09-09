@@ -2,6 +2,8 @@ import React from "react";
 import "./Tabs6.css";
 import { SiPostman } from "react-icons/si";
 import Switch from "../../Switch/Switch";
+import { useState } from "react";
+import Tabs6dropdown from "../../Tabs6dropdown/Tabs6dropdown";
 
 function Tabs6() {
   return (
@@ -9,24 +11,31 @@ function Tabs6() {
       <div className="tabs6-top">
         <div className="item1">
           <div className="item1-1">
-            <p className="header-p">HTTP Version</p>
-            <span className="new-span">NEW</span>
+            <div className="item1-1-part1">
+              <p className="header-p">HTTP Version</p>
+              <span className="new-span">NEW</span>
+            </div>
+            <Tabs6dropdown />
           </div>
           <div className="item1-2">
             <p>Select the HTTP version to use for sending the request.</p>
           </div>
-          <div>
-            <Switch />
-          </div>
         </div>
 
         <div className="item2">
-          <p className="header-p">Enable SSL certificate verification</p>
-          <p>
-            Verify SSL certificates when sending a request. Verification
-            failures <br />
-            will result in the request being aborted.
-          </p>
+          <div className="item2-1">
+            <div className="item2-1-part1">
+              <p className="header-p">Enable SSL certificate verification</p>
+            </div>
+            <Switch />
+          </div>
+          <div className="item2-2">
+            <p>
+              Verify SSL certificates when sending a request. Verification
+              failures <br />
+              will result in the request being aborted.
+            </p>
+          </div>
         </div>
 
         <div className="item3">
