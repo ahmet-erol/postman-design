@@ -1,7 +1,7 @@
 .dropdown-container {
   width: 100px;
   position: absolute;
-  right: 18px;
+  right: 35px;
 }
 
 .dropdown-header {
@@ -44,4 +44,21 @@
 
 .arrow {
   margin-left: 10px;
+}
+
+.dropdown-list {
+  position: absolute;
+  background-color: #404040;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+  padding: 7px;
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.dropdown-item:hover {
+  background-color: #212121;
+  border-radius: 5px;
 }
