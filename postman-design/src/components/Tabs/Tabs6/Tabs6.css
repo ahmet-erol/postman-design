@@ -85,13 +85,14 @@
   font-size: 12px;
   font-weight: 100;
   padding-left: 13px;
+  padding-right: 13px;
   padding-top: 10px;
   line-height: 1.1;
 }
 
 .item1-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -112,9 +113,8 @@
 
 .item2-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item2-1-part1 {
@@ -125,9 +125,8 @@
 
 .item3-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item3-1-part1 {
@@ -138,9 +137,8 @@
 
 .item4-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item5-1-part1 {
@@ -151,9 +149,8 @@
 
 .item5-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item5-1-part1 {
@@ -164,9 +161,8 @@
 
 .item6-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item6-1-part1 {
@@ -177,9 +173,8 @@
 
 .item7-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item7-1-part1 {
@@ -190,9 +185,8 @@
 
 .item8-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item8-1-part1 {
@@ -203,9 +197,8 @@
 
 .item9-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item9-1-part1 {
@@ -216,9 +209,8 @@
 
 .item10-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item10-1-part1 {
@@ -229,9 +221,8 @@
 
 .item11-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item11-1-part1 {
@@ -242,9 +233,8 @@
 
 .item12-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item12-1-part1 {
@@ -255,9 +245,8 @@
 
 .item13-1 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 500px;
 }
 
 .item13-1-part1 {
