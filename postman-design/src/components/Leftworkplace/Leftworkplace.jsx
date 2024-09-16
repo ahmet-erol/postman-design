@@ -8,13 +8,28 @@ import { SlOptions } from "react-icons/sl";
 import { FaAngleRight } from "react-icons/fa6";
 import { useState } from "react";
 import Newpopup from "../Newpopup/Newpopup";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 function Leftworkplace() {
   const [newPopup, setNewPopup] = useState(false);
+  const popupRef = useRef(null);
 
   const handleClick = () => {
     setNewPopup(true);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        setNewPopup(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [setNewPopup]);
 
   return (
     <div className="mainleft-div">
@@ -35,7 +50,7 @@ function Leftworkplace() {
             >
               New
             </button>
-            {newPopup && <Newpopup />}
+            {newPopup && <Newpopup ref={popupRef} />}
           </div>
           <div className="left-importbutton">
             <button type="button" className="left-importbutton-inside">
