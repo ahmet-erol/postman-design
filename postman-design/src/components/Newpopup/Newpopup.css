@@ -16,8 +16,8 @@
   height: 45%;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  font-size: 14px;
+  gap: 35px;
+  font-size: 12px;
   color: #a7a1a1;
   font-family: "JetBrains Mono", monospace;
   /* flex-direction: column; */
@@ -44,8 +44,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 75px;
-  width: 75px;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
 }
 
 .photo-1 {
@@ -73,8 +74,8 @@
   height: 45%;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  font-size: 14px;
+  gap: 35px;
+  font-size: 12px;
   color: #a7a1a1;
   font-family: "JetBrains Mono", monospace;
 }
@@ -89,8 +90,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 75px;
-  width: 75px;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
 }
 
 .photo-6 {
@@ -111,4 +113,34 @@
 
 .photo-10 {
   color: #a6a6a6;
+}
+
+.popup-http:hover {
+  background-color: #002d70;
+  border-radius: 10px;
+  border: 2px solid #0265d2;
+}
+
+.popup-graphql:hover {
+  background-color: #002d70;
+  border-radius: 10px;
+  border: 2px solid #0265d2;
+}
+
+.popup-grpc:hover {
+  background-color: #002d70;
+  border-radius: 10px;
+  border: 2px solid #0265d2;
+}
+
+.popup-websocket:hover {
+  background-color: #002d70;
+  border-radius: 10px;
+  border: 2px solid #0265d2;
+}
+
+.popup-websocket:hover {
+  background-color: #002d70;
+  border-radius: 10px;
+  border: 2px solid #0265d2;
 }
