@@ -110,10 +110,10 @@ function Rightworkplace() {
                   HEAD
                 </div>
                 <div
-                  className="optionsable"
-                  onClick={() => handleOptionClick("options")}
+                  className="option"
+                  onClick={() => handleOptionClick("option")}
                 >
-                  OPTIONS
+                  OPTION
                 </div>
               </div>
             )}

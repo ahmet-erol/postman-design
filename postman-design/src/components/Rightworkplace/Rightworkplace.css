@@ -259,11 +259,11 @@
   border-radius: 5px;
 }
 
-.optionsable {
+.option {
   color: #f15eb0;
   padding: 5px;
 }
-.optionsable:hover {
+.option:hover {
   background-color: #212121;
   border-radius: 5px;
 }
