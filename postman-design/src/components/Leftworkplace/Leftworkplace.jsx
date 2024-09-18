@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Leftworkplace.css";
 import { FaRegUser } from "react-icons/fa";
 import { BsCollection } from "react-icons/bs";
@@ -6,10 +6,7 @@ import { CiBoxes } from "react-icons/ci";
 import { RiHistoryFill } from "react-icons/ri";
 import { SlOptions } from "react-icons/sl";
 import { FaAngleRight } from "react-icons/fa6";
-import { useState } from "react";
 import Newpopup from "../Newpopup/Newpopup";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 function Leftworkplace() {
   const [newPopup, setNewPopup] = useState(false);
@@ -29,7 +26,7 @@ function Leftworkplace() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [setNewPopup]);
+  }, []);
 
   return (
     <div className="mainleft-div">

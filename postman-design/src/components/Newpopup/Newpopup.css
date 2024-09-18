@@ -13,7 +13,7 @@
 
 .popup-top {
   display: flex;
-  height: 45%;
+  height: 40%;
   align-items: center;
   justify-content: center;
   gap: 35px;
@@ -47,6 +47,8 @@
   justify-content: center;
   height: 90px;
   width: 90px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .photo-1 {
@@ -71,7 +73,7 @@
 
 .popup-bottom {
   display: flex;
-  height: 45%;
+  height: 40%;
   align-items: center;
   justify-content: center;
   gap: 35px;
@@ -93,6 +95,8 @@
   justify-content: center;
   height: 90px;
   width: 90px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .photo-6 {
@@ -143,4 +147,15 @@
   background-color: #002d70;
   border-radius: 10px;
   border: 2px solid #0265d2;
+}
+
+.popup-footer {
+  display: flex;
+  height: 11%;
+  background-color: #262626;
+  font-size: 11px;
+  border-radius: 0 0 10px 10px;
+  color: #a7a1a1;
+  font-family: "JetBrains Mono", monospace;
+  padding: 15px;
 }
