@@ -7,19 +7,32 @@ import { RiHistoryFill } from "react-icons/ri";
 import { SlOptions } from "react-icons/sl";
 import { FaAngleRight } from "react-icons/fa6";
 import Newpopup from "../Newpopup/Newpopup";
+import Importpopup from "../Importpopup/Importpopup";
 
 function Leftworkplace() {
   const [newPopup, setNewPopup] = useState(false);
-  const popupRef = useRef(null);
+  const [newImport, setNewImport] = useState(false);
 
-  const handleClick = () => {
+  const popupRef = useRef(null);
+  const importRef = useRef(null);
+
+  const handleNewClick = () => {
     setNewPopup(true);
+    setNewImport(false);
+  };
+
+  const handleImportClick = () => {
+    setNewImport(true);
+    setNewPopup(false);
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (popupRef.current && !popupRef.current.contains(event.target)) {
         setNewPopup(false);
+      }
+      if (importRef.current && !importRef.current.contains(event.target)) {
+        setNewImport(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -43,16 +56,21 @@ function Leftworkplace() {
             <button
               type="button"
               className="left-newbutton-inside"
-              onClick={handleClick}
+              onClick={handleNewClick}
             >
               New
             </button>
             {newPopup && <Newpopup ref={popupRef} />}
           </div>
           <div className="left-importbutton">
-            <button type="button" className="left-importbutton-inside">
+            <button
+              type="button"
+              className="left-importbutton-inside"
+              onClick={handleImportClick}
+            >
               Import
             </button>
+            {newImport && <Importpopup ref={importRef} />}
           </div>
         </div>
       </div>
