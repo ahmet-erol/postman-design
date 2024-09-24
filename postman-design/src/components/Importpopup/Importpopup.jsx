@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Importpopup.css";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import { CiImport } from "react-icons/ci";
+import { BsFillWrenchAdjustableCircleFill } from "react-icons/bs";
+import { FaAngleDown } from "react-icons/fa";
 
 function Importpopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,8 +50,12 @@ function Importpopup() {
         </div>
       </div>
       <div className="footer-import">
-        <div className="footer-left"></div>
-        <div className="footer-mid"></div>
+        <div className="footer-left">
+          <BsFillWrenchAdjustableCircleFill size={18} />
+          Migrate to Postman
+          <FaAngleDown />
+        </div>
+        <div className="footer-mid">Other Sources</div>
         <div className="footer-right"></div>
       </div>
     </div>

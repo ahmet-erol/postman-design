@@ -86,3 +86,48 @@
   justify-content: center;
   border: 0.01px solid #ddd5d5;
 }
+
+.footer-import {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  padding-left: 15px;
+  padding-top: 8px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  height: 6vh;
+  width: 25%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  gap: 5px;
+  color: white;
+}
+
+.footer-left:hover {
+  background-color: #303030;
+  border-radius: 5px;
+}
+
+.footer-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  height: 6vh;
+  width: 25%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  gap: 5px;
+  color: white;
+}
+
+.footer-mid:hover {
+  background-color: #303030;
+  border-radius: 5px;
+}
