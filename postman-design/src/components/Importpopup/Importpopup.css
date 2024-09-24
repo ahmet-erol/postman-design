@@ -21,6 +21,7 @@
 .import-top-text {
   width: 94%;
   height: 30px;
+  border: 2px solid transparent;
   border-left: none;
   border-radius: 5px;
   background-color: #212121;
@@ -31,8 +32,57 @@
   font-size: 12px;
   padding-top: 5px;
   margin-top: 10px;
+  box-sizing: border-box;
 }
 
 .import-top-text.active {
-  border: 2px solid #097bed;
+  border-color: #097bed;
+}
+
+.topbottom-import {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.topbottom-context {
+  width: 92%;
+  height: 30px;
+  background-color: #2b2b2b;
+  border-radius: 5px;
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
+  padding-left: 15px;
+  gap: 10px;
+}
+
+.middle-import {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.middle-context {
+  width: 92%;
+  height: 36vh;
+  background-color: #212121;
+  border-radius: 3px;
+  font-family: "JetBrains Mono", monospace;
+  color: #a7a1a1;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
+  padding-left: 15px;
+  gap: 10px;
+  justify-content: center;
+  border: 0.01px solid #ddd5d5;
 }

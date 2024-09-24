@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Importpopup.css";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import { CiImport } from "react-icons/ci";
 
 function Importpopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +35,23 @@ function Importpopup() {
           ref={importRef}
         />
       </div>
-      <div className="topbottom-import"></div>
-      <div className="middile-import"></div>
-      <div className="footer-import"></div>
+      <div className="topbottom-import">
+        <div className="topbottom-context">
+          <MdOutlineTipsAndUpdates size={18} />
+          Tip: You can also paste cURL in the request bar to import
+        </div>
+      </div>
+      <div className="middle-import">
+        <div className="middle-context">
+          <CiImport size={50} />
+          Drop anywhere to import or select files or folders
+        </div>
+      </div>
+      <div className="footer-import">
+        <div className="footer-left"></div>
+        <div className="footer-mid"></div>
+        <div className="footer-right"></div>
+      </div>
     </div>
   );
 }
