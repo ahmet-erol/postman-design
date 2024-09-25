@@ -5,7 +5,7 @@ import { CiImport } from "react-icons/ci";
 import { BsFillWrenchAdjustableCircleFill } from "react-icons/bs";
 import { FaAngleDown } from "react-icons/fa";
 
-function Importpopup() {
+function Importpopup({ onClose }) {
   const [isOpen, setIsOpen] = useState(false);
   const importRef = useRef(null);
 
@@ -16,7 +16,7 @@ function Importpopup() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (importRef.current && !importRef.current.contains(event.target)) {
-        setIsOpen(false);
+        onClose();
       }
     };
 
@@ -24,17 +24,16 @@ function Importpopup() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [onClose]);
 
   return (
-    <div className="import-main">
+    <div className="import-main" ref={importRef}>
       <div className="top-import">
         <input
           type="text"
           placeholder="Paste cURL, Raw text or URL..."
           className={`import-top-text ${isOpen ? "active" : ""}`}
           onClick={handleInputClick}
-          ref={importRef}
         />
       </div>
       <div className="topbottom-import">

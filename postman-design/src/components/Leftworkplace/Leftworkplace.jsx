@@ -26,6 +26,10 @@ function Leftworkplace() {
     setNewPopup(false);
   };
 
+  const closeImportPopup = () => {
+    setNewImport(false); // Popup'u kapat
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (popupRef.current && !popupRef.current.contains(event.target)) {
@@ -70,7 +74,7 @@ function Leftworkplace() {
             >
               Import
             </button>
-            {newImport && <Importpopup ref={importRef} />}
+            {newImport && <Importpopup onClose={closeImportPopup} />}
           </div>
         </div>
       </div>
