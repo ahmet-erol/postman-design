@@ -4,19 +4,36 @@ import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import { CiImport } from "react-icons/ci";
 import { BsFillWrenchAdjustableCircleFill } from "react-icons/bs";
 import { FaAngleDown } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaBitbucket } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa";
 
 function Importpopup({ onClose }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("");
+  const toggleDropdown = () => setIsOpen(!isOpen);
+  const footerdropdownRef = useRef(null);
   const importRef = useRef(null);
 
   const handleInputClick = () => {
     setIsOpen(true);
   };
 
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (importRef.current && !importRef.current.contains(event.target)) {
         onClose();
+      }
+      if (
+        footerdropdownRef.current &&
+        !footerdropdownRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
       }
     };
 
@@ -50,12 +67,36 @@ function Importpopup({ onClose }) {
       </div>
       <div className="footer-import">
         <div className="footer-left">
-          <BsFillWrenchAdjustableCircleFill size={18} />
-          Migrate to Postman
+          <div className="footer-left-dropdownheader" onClick={toggleDropdown}>
+            <BsFillWrenchAdjustableCircleFill size={18} />
+            Migrate to Postman
+            <FaAngleDown />
+          </div>
+          {isOpen && (
+            <div className="dropdown-list">
+              <div
+                className="footer-item"
+                onClick={() => handleOptionClick("SoapUI")}
+              >
+                SoapUI
+              </div>
+              <div
+                className="footer-item"
+                onClick={() => handleOptionClick("Other")}
+              >
+                Other
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="footer-mid">
+          <FaGithub size={15} />
+          <FaBitbucket size={15} color="#357DE8" />
+          <FaGitlab size={15} color="#E64122" />
+          Other Sources
           <FaAngleDown />
         </div>
-        <div className="footer-mid">Other Sources</div>
-        <div className="footer-right"></div>
+        <div className="footer-right">Learn more about importing data</div>
       </div>
     </div>
   );

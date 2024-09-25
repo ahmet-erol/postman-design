@@ -114,6 +114,13 @@
   border-radius: 5px;
 }
 
+.footer-left-dropdownheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .footer-mid {
   display: flex;
   align-items: center;
@@ -130,4 +137,18 @@
 .footer-mid:hover {
   background-color: #303030;
   border-radius: 5px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  height: 6vh;
+  width: 40%;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  gap: 5px;
+  color: white;
+  padding-left: 5px;
 }

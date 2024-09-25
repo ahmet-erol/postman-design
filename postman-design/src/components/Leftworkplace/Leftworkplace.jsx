@@ -27,7 +27,7 @@ function Leftworkplace() {
   };
 
   const closeImportPopup = () => {
-    setNewImport(false); // Popup'u kapat
+    setNewImport(false);
   };
 
   useEffect(() => {
