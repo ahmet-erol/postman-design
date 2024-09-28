@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useInsertionEffect } from "react";
 import "./Importpopup.css";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import { CiImport } from "react-icons/ci";
@@ -7,16 +7,25 @@ import { FaAngleDown } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaBitbucket } from "react-icons/fa";
 import { FaGitlab } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 
 function Importpopup({ onClose }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMidDropActive, setIsMidDropActive] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const toggleDropdown = () => setIsOpen(!isOpen);
+  const toggleMidDropdown = () => setIsMidDropActive(!isMidDropActive);
   const footerdropdownRef = useRef(null);
   const importRef = useRef(null);
+  const footermiddropdownRef = useRef(null);
+  const midimportRef = useRef(null);
 
   const handleInputClick = () => {
     setIsOpen(true);
+  };
+
+  const handleInputMidDrop = () => {
+    setIsMidDropActive(true);
   };
 
   const handleOptionClick = (option) => {
@@ -34,6 +43,12 @@ function Importpopup({ onClose }) {
         !footerdropdownRef.current.contains(event.target)
       ) {
         setIsOpen(false);
+      }
+      if (
+        footermiddropdownRef.current &&
+        !footermiddropdownRef.current.contains(event.target)
+      ) {
+        setIsMidDropActive(false);
       }
     };
 
@@ -66,11 +81,17 @@ function Importpopup({ onClose }) {
         </div>
       </div>
       <div className="footer-import">
-        <div className="footer-left" ref={footerdropdownRef}>
-          <div className="footer-left-dropdownheader" onClick={toggleDropdown}>
+        <div
+          className={`footer-left ${isOpen ? "active" : ""}`}
+          ref={footerdropdownRef}
+          onClick={toggleDropdown}
+        >
+          <div className="footer-left-dropdownheader">
             <BsFillWrenchAdjustableCircleFill size={18} />
             Migrate to Postman
-            <FaAngleDown />
+            <span className="left-drop-span">
+              {isOpen ? <FaAngleUp /> : <FaAngleDown />}
+            </span>
           </div>
           {isOpen && (
             <div className="footer-dropdown-list">
@@ -93,13 +114,27 @@ function Importpopup({ onClose }) {
             </div>
           )}
         </div>
-        <div className="footer-mid">
-          <FaGithub size={15} />
-          <FaBitbucket size={15} color="#357DE8" />
-          <FaGitlab size={15} color="#E64122" />
-          Other Sources
-          <FaAngleDown />
+        <div
+          className={`footer-mid-import ${isMidDropActive ? "active" : ""}`}
+          onClick={toggleMidDropdown}
+          ref={footermiddropdownRef}
+          onClick={handleInputMidDrop}
+        >
+          <div className="footer-mid">
+            <div className="footer-mid-logos">
+              <FaGithub size={15} />
+              <FaBitbucket size={15} color="#357DE8" />
+              <FaGitlab size={15} color="#E64122" />
+            </div>
+            <div className="footer-mid-rightside">
+              Other Sources
+              <span className="mid-drop-span">
+                {isMidDropActive ? <FaAngleUp /> : <FaAngleDown />}
+              </span>
+            </div>
+          </div>
         </div>
+
         <div className="footer-right">Learn more about importing data</div>
       </div>
     </div>
