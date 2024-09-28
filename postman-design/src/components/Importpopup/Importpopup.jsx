@@ -66,14 +66,15 @@ function Importpopup({ onClose }) {
         </div>
       </div>
       <div className="footer-import">
-        <div className="footer-left">
+        <div className="footer-left" ref={footerdropdownRef}>
           <div className="footer-left-dropdownheader" onClick={toggleDropdown}>
             <BsFillWrenchAdjustableCircleFill size={18} />
             Migrate to Postman
             <FaAngleDown />
           </div>
           {isOpen && (
-            <div className="dropdown-list">
+            <div className="footer-dropdown-list">
+              <div className="footer-dropdown-header">From</div>
               <div
                 className="footer-item"
                 onClick={() => handleOptionClick("SoapUI")}
@@ -85,6 +86,9 @@ function Importpopup({ onClose }) {
                 onClick={() => handleOptionClick("Other")}
               >
                 Other
+              </div>
+              <div className="footer-dropdown-footer">
+                Learn about <br /> migrating data to Postman
               </div>
             </div>
           )}
