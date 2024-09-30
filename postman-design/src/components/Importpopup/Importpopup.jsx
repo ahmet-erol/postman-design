@@ -8,6 +8,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaBitbucket } from "react-icons/fa";
 import { FaGitlab } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { MdOutlineCloudSync } from "react-icons/md";
 
 function Importpopup({ onClose }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -118,7 +120,6 @@ function Importpopup({ onClose }) {
           className={`footer-mid-import ${isMidDropActive ? "active" : ""}`}
           onClick={toggleMidDropdown}
           ref={footermiddropdownRef}
-          onClick={handleInputMidDrop}
         >
           <div className="footer-mid">
             <div className="footer-mid-logos">
@@ -131,6 +132,57 @@ function Importpopup({ onClose }) {
               <span className="mid-drop-span">
                 {isMidDropActive ? <FaAngleUp /> : <FaAngleDown />}
               </span>
+              {isMidDropActive && (
+                <div className="footer-mid-dropdown-list">
+                  <div className="footer-mid-dropdown-header">
+                    Code Repositories
+                  </div>
+                  <div
+                    className="footer-mid-item"
+                    onClick={() => handleOptionClick("Github")}
+                  >
+                    <FaGithub size={15} />
+                    Github
+                  </div>
+                  <div
+                    className="footer-mid-item"
+                    onClick={() => handleOptionClick("Bitbucket")}
+                  >
+                    <FaBitbucket size={15} color="#357DE8" />
+                    Bitbucket
+                  </div>
+                  <div
+                    className="footer-mid-item"
+                    onClick={() => handleOptionClick("GitLab")}
+                  >
+                    <FaGitlab size={15} color="#E64122" />
+                    GitLab
+                  </div>
+                  <div
+                    className="footer-mid-item"
+                    onClick={() => handleOptionClick("Azure")}
+                  >
+                    Azure
+                  </div>
+                  <div className="footer-mid-dropdown-secondheader">
+                    API Gateways
+                  </div>
+                  <div
+                    className="footer-mid-item"
+                    onClick={() => handleOptionClick("AWS API Gateway")}
+                  >
+                    <FaAws size={15} color="#FF9900" />
+                    AWS API Gateway
+                  </div>
+                  <div
+                    className="footer-mid-item"
+                    onClick={() => handleOptionClick("Azure API Management")}
+                  >
+                    <MdOutlineCloudSync size={15} color="#087CD8" />
+                    Azure API Management
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
