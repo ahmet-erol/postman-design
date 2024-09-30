@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import { IoOptions } from "react-icons/io5";
 import { FaArrowLeft } from "react-icons/fa6";
@@ -6,8 +6,31 @@ import { FaArrowRight } from "react-icons/fa6";
 import { IoPersonAddOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { FaAngleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 
 function Header() {
+  const [isWorkspace, setIsWorkspace] = useState(false);
+  const toggleWsdropdown = () => setIsWorkspace(!isWorkspace);
+  const workspaceRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        workspaceRef.current &&
+        !workspaceRef.current.contains(event.target)
+      ) {
+        setIsWorkspace(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="main-div">
       <div className="left-area">
@@ -22,7 +45,19 @@ function Header() {
 
           <div className="header-texts">
             <div className="home-text">Home</div>
-            <div className="workspaces-text">WorkSpaces</div>
+            <div
+              className="workspaces-text"
+              onClick={toggleWsdropdown}
+              ref={workspaceRef}
+            >
+              WorkSpaces
+              {isWorkspace ? <FaAngleUp /> : <FaAngleDown />}
+            </div>
+            {isWorkspace && (
+              <div className="workspaces-dropdownlist">
+                <div className="ws-dd-header">selamlar</div>
+              </div>
+            )}
             <div className="apinetwork-test">API Network</div>
           </div>
         </div>
