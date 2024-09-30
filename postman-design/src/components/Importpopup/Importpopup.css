@@ -282,6 +282,26 @@
   padding-left: 15px;
 }
 
+.footer-mid-item-azure {
+  background-color: #212121;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  padding-left: 15px;
+}
+
+.azure-text {
+  margin-left: 20px;
+}
+
 .footer-mid-item:hover {
+  background-color: #303030;
+}
+
+.footer-mid-item-azure:hover {
   background-color: #303030;
 }

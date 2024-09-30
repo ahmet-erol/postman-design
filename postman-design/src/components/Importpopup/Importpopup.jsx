@@ -159,10 +159,10 @@ function Importpopup({ onClose }) {
                     GitLab
                   </div>
                   <div
-                    className="footer-mid-item"
+                    className="footer-mid-item-azure"
                     onClick={() => handleOptionClick("Azure")}
                   >
-                    Azure
+                    <div className="azure-text">Azure</div>
                   </div>
                   <div className="footer-mid-dropdown-secondheader">
                     API Gateways
