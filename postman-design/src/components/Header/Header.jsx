@@ -8,10 +8,16 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
+import { TiTick } from "react-icons/ti";
+import { FaRegUser } from "react-icons/fa";
 
 function Header() {
   const [isWorkspace, setIsWorkspace] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   const toggleWsdropdown = () => setIsWorkspace(!isWorkspace);
+  const toggleActiveinput = () => {
+    setIsActive(!setIsActive);
+  };
   const workspaceRef = useRef(null);
 
   useEffect(() => {
@@ -21,6 +27,7 @@ function Header() {
         !workspaceRef.current.contains(event.target)
       ) {
         setIsWorkspace(false);
+        setIsActive(false);
       }
     };
 
@@ -45,17 +52,42 @@ function Header() {
 
           <div className="header-texts">
             <div className="home-text">Home</div>
-            <div
-              className="workspaces-text"
-              onClick={toggleWsdropdown}
-              ref={workspaceRef}
-            >
+            <div className="workspaces-text" onClick={toggleWsdropdown}>
               WorkSpaces
               {isWorkspace ? <FaAngleUp /> : <FaAngleDown />}
             </div>
             {isWorkspace && (
-              <div className="workspaces-dropdownlist">
-                <div className="ws-dd-header">selamlar</div>
+              <div className="workspaces-dropdownlist" ref={workspaceRef}>
+                <div className="ws-dd-header">
+                  <div className="ws-dd-header-inp">
+                    <input
+                      type="text"
+                      className={`ws-dd-inp ${isActive ? "" : "active"}`}
+                      placeholder="Search workplaces"
+                      onClick={toggleActiveinput}
+                    />
+                  </div>
+                  <div className="create-ws-button">
+                    <button className="create-ws-button-ins">
+                      Create Workspace
+                    </button>
+                  </div>
+                </div>
+                <div className="ws-dd-middle">
+                  <div className="middle-head">Recently visited</div>
+                  <div className="middle-mid">
+                    <TiTick />
+                    <FaRegUser />
+                    My Workspace
+                  </div>
+                  <div className="middle-mid-sec">More workspaces</div>
+                  <div className="middle-mid-third">No workspaces found</div>
+                </div>
+                <div className="ws-dd-footer">
+                  <div className="ws-dd-footer-content">
+                    View all workspaces
+                  </div>
+                </div>
               </div>
             )}
             <div className="apinetwork-test">API Network</div>

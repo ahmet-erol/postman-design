@@ -231,9 +231,59 @@
   left: 0;
   background-color: #212121;
   height: 892%;
-  width: 80%;
+  width: 100%;
   z-index: 999;
   margin-left: 90px;
   border-radius: 5px;
   border: 0.5px solid #cec8c8;
+}
+
+.ws-dd-header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.ws-dd-header-inp {
+  padding-left: 5px;
+}
+
+.ws-dd-inp {
+  background-color: #212121;
+  outline: none;
+  font-family: "JetBrains Mono", monospace;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom: none;
+  border-inline: none;
+  border: 0.5px solid #cec8c8;
+  height: 5vh;
+  width: 25vh;
+  font-size: 10px;
+  text-align: left;
+  padding-left: 10px;
+  color: #cec8c8;
+}
+
+.ws-dd-inp.active {
+  border: 2px solid #097bed;
+}
+
+.create-ws-button-ins {
+  width: 20vh;
+  height: 5vh;
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #3b3b3b;
+  font-family: "JetBrains Mono", monospace;
+  color: #cec8c8;
+  outline: none;
+  border-bottom: none;
+  border-inline: none;
+  border-top: none;
+  cursor: pointer;
+}
+
+.create-ws-button-ins:hover {
+  background-color: #6b6b6b;
 }
