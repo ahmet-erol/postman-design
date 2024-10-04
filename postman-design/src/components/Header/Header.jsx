@@ -13,12 +13,16 @@ import { FaRegUser } from "react-icons/fa";
 
 function Header() {
   const [isWorkspace, setIsWorkspace] = useState(false);
+  const [isApinetwork, setIsApinetwork] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const toggleWsdropdown = () => setIsWorkspace(!isWorkspace);
+  const toggleApidropdown = () => setIsApinetwork(!isApinetwork);
+
   const toggleActiveinput = () => {
     setIsActive(!setIsActive);
   };
   const workspaceRef = useRef(null);
+  const apinetworkRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -28,6 +32,13 @@ function Header() {
       ) {
         setIsWorkspace(false);
         setIsActive(false);
+      }
+
+      if (
+        apinetworkRef.current &&
+        !apinetworkRef.current.contains(event.target)
+      ) {
+        setIsApinetwork(false);
       }
     };
 
@@ -95,7 +106,10 @@ function Header() {
                 </div>
               </div>
             )}
-            <div className="apinetwork-test">API Network</div>
+            <div className="apinetwork-test" onClick={toggleApidropdown}>
+              API Network
+              {isApinetwork ? <FaAngleUp /> : <FaAngleDown />}
+            </div>
           </div>
         </div>
       </div>
