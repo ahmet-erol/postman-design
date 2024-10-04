@@ -236,6 +236,8 @@
   margin-left: 90px;
   border-radius: 5px;
   border: 0.5px solid #cec8c8;
+  display: flex;
+  flex-direction: column;
 }
 
 .ws-dd-header {
@@ -286,4 +288,55 @@
 
 .create-ws-button-ins:hover {
   background-color: #6b6b6b;
+}
+
+.ws-dd-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #cec8c8;
+  font-size: 12px;
+}
+
+.middle-head {
+  color: #807b7b;
+  font-size: 12px;
+}
+
+.middle-mid {
+  display: flex;
+  gap: 10px;
+  background-color: #404040;
+  width: 100%;
+  cursor: pointer;
+}
+
+.middle-mid-sec {
+  color: #807b7b;
+  font-size: 12px;
+}
+
+.middle-mid-third {
+  color: #807b7b;
+  font-size: 11px;
+  text-indent: 22px;
+}
+
+.ws-dd-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #cec8c8;
+  font-size: 12px;
+  margin-top: auto;
+  border-top: 1px solid #cec8c8;
+}
+
+.ws-dd-footer-content {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  cursor: pointer;
 }

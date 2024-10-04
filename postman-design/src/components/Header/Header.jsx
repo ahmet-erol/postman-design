@@ -74,18 +74,23 @@ function Header() {
                   </div>
                 </div>
                 <div className="ws-dd-middle">
-                  <div className="middle-head">Recently visited</div>
+                  <div className="middle-head">
+                    <strong>Recently visited</strong>
+                  </div>
                   <div className="middle-mid">
                     <TiTick />
                     <FaRegUser />
                     My Workspace
                   </div>
-                  <div className="middle-mid-sec">More workspaces</div>
+                  <div className="middle-mid-sec">
+                    <strong>More workspaces</strong>
+                  </div>
                   <div className="middle-mid-third">No workspaces found</div>
                 </div>
                 <div className="ws-dd-footer">
                   <div className="ws-dd-footer-content">
                     View all workspaces
+                    <FaArrowRight />
                   </div>
                 </div>
               </div>
