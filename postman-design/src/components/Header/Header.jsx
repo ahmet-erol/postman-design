@@ -104,7 +104,9 @@ function Header() {
                 <div className="ws-dd-footer">
                   <div className="ws-dd-footer-content">
                     View all workspaces
-                    <FaArrowRight />
+                    <div className="wss-dd-icon">
+                      <FaArrowRight />
+                    </div>
                   </div>
                 </div>
               </div>

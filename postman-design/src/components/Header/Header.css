@@ -339,9 +339,18 @@
   margin-top: auto;
   display: flex;
   align-items: center;
-  gap: 8px;
   font-size: 11px;
   cursor: pointer;
+}
+
+.ws-dd-footer-content:hover {
+  color: #397dcb;
+}
+
+.wss-dd-icon {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
 }
 
 .apinetwork-dropdownlist {
