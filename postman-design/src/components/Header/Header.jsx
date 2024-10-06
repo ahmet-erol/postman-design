@@ -10,6 +10,9 @@ import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 import { FaRegUser } from "react-icons/fa";
+import { TfiAnnouncement } from "react-icons/tfi";
+import { MdOutlineTrendingUp } from "react-icons/md";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 function Header() {
   const [isWorkspace, setIsWorkspace] = useState(false);
@@ -110,6 +113,51 @@ function Header() {
               API Network
               {isApinetwork ? <FaAngleUp /> : <FaAngleDown />}
             </div>
+            {isApinetwork && (
+              <div className="apinetwork-dropdownlist" ref={apinetworkRef}>
+                <div className="api-dw-top">
+                  <div className="dw-top-header">
+                    {" "}
+                    Explore and integrate with public APIs
+                  </div>
+
+                  <div className="dw-top-mid">
+                    <div className="dw-top-mid-first">
+                      <TfiAnnouncement size={15} />
+                      API Spotlight
+                    </div>
+                    <div className="dw-top-mid-second">
+                      <MdOutlineTrendingUp size={15} />
+                      Trending APIs
+                    </div>
+                  </div>
+                  <div className="dw-top-bottom">
+                    View all public APIs
+                    <div className="right-arrowr-dw">
+                      <FaLongArrowAltRight />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="api-dw-bottom">
+                  <div className="dw-bottom-header">
+                    Use internal team APIs to ease development
+                  </div>
+
+                  <div className="dw-bottom-mid">
+                    A central hub for internal APIs, to streamline your
+                    development.
+                  </div>
+
+                  <div className="dw-bottom-bottom">
+                    View internal APIs
+                    <div className="right-arrowr-dw">
+                      <FaLongArrowAltRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
