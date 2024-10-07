@@ -174,10 +174,11 @@
   color: white;
   font-size: 12px;
   font-family: "JetBrains Mono", monospace;
+  background-color: #097bed;
 }
 
 .invite-button:hover {
-  background-color: #6b6b6b;
+  background-color: #074f97;
 }
 
 .invite-logo {
@@ -436,8 +437,13 @@
   font-size: 13px;
   margin-left: -1px;
   font-weight: bold;
-  border-top: 1px solid #5e5a5a;
+  /* border-top: 1px solid #5e5a5a; */
 }
+
+/* .border-line-between-them {
+  border: 1px solid #5e5a5a;
+  padding-bottom: 10px;
+} */
 
 .dw-bottom-mid {
   display: flex;

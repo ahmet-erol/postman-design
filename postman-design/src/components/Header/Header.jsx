@@ -13,13 +13,19 @@ import { FaRegUser } from "react-icons/fa";
 import { TfiAnnouncement } from "react-icons/tfi";
 import { MdOutlineTrendingUp } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Invitepopup from "../Invitepopup/Invitepopup";
 
 function Header() {
   const [isWorkspace, setIsWorkspace] = useState(false);
   const [isApinetwork, setIsApinetwork] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const [newInvite, setNewInvite] = useState(false);
   const toggleWsdropdown = () => setIsWorkspace(!isWorkspace);
   const toggleApidropdown = () => setIsApinetwork(!isApinetwork);
+
+  const handleInviteClick = () => {
+    setNewInvite(true);
+  };
 
   const toggleActiveinput = () => {
     setIsActive(!setIsActive);
@@ -169,7 +175,11 @@ function Header() {
       </div>
 
       <div className="right-area">
-        <button type="button" className="invite-button">
+        <button
+          type="button"
+          className="invite-button"
+          onClick={handleInviteClick}
+        >
           <IoPersonAddOutline className="invite-logo" />
           Invite
         </button>
@@ -180,6 +190,7 @@ function Header() {
         <button type="button" className="upgrade-button">
           Upgrade
         </button>
+        {newInvite && <Invitepopup />}
       </div>
     </div>
   );
