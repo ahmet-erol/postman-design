@@ -17,6 +17,26 @@
   font-family: "JetBrains Mono", monospace;
 }
 
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  color: #ff6c37;
+}
+
 .invite-top {
   display: flex;
   font-size: 15px;

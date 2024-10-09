@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Invitepopup.css";
-import { IoInformationCircleOutline } from "react-icons/io5";
+import { IoInformationCircleOutline, IoCloseOutline } from "react-icons/io5"; // Kapatma ikonu ekleniyor.
 
-function Invitepopup() {
+function Invitepopup({ onClose }) {
   return (
     <div className="invite-main">
+      <button className="close-button" onClick={onClose}>
+        <IoCloseOutline size={24} />
+      </button>
+
       <div className="invite-content">
         <div className="invite-top">Invite people to this workspace</div>
         <div className="invite-mid">

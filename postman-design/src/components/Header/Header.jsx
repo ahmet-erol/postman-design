@@ -27,6 +27,10 @@ function Header() {
     setNewInvite(true);
   };
 
+  const handleCloseInvite = () => {
+    setNewInvite(false);
+  };
+
   const toggleActiveinput = () => {
     setIsActive(!setIsActive);
   };
@@ -190,7 +194,7 @@ function Header() {
         <button type="button" className="upgrade-button">
           Upgrade
         </button>
-        {newInvite && <Invitepopup />}
+        {newInvite && <Invitepopup onClose={handleCloseInvite} />}
       </div>
     </div>
   );
