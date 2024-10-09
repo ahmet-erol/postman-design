@@ -20,6 +20,8 @@ function Header() {
   const [isApinetwork, setIsApinetwork] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [newInvite, setNewInvite] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
   const toggleWsdropdown = () => setIsWorkspace(!isWorkspace);
   const toggleApidropdown = () => setIsApinetwork(!isApinetwork);
 
@@ -34,6 +36,11 @@ function Header() {
   const toggleActiveinput = () => {
     setIsActive(!setIsActive);
   };
+
+  const handleSettingsClick = () => {
+    setIsSettingsOpen(!isSettingsOpen);
+  };
+
   const workspaceRef = useRef(null);
   const apinetworkRef = useRef(null);
 
@@ -188,7 +195,22 @@ function Header() {
           Invite
         </button>
 
-        <IoSettingsOutline className="options-logo" />
+        <IoSettingsOutline
+          className="options-logo"
+          onClick={handleSettingsClick}
+        />
+        {isSettingsOpen && (
+          <div className="settings-menu">
+            <div className="settings-one">Settings</div>
+            <div className="settings-release">Release Notes</div>
+            <div className="settings-learning">Learning Center</div>
+            <div className="settings-support">Support Center</div>
+            <div className="settings-trust">Trust and Security</div>
+            <div className="settings-privacy">Privacy Policy</div>
+            <div className="settings-terms">Terms</div>
+            <div className="settings-getpostman">@getpostman</div>
+          </div>
+        )}
         <IoMdNotificationsOutline className="noti-logo" />
 
         <button type="button" className="upgrade-button">
